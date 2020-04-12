@@ -11,7 +11,10 @@ const home = () => {
           <div className="job">
             I am Reactjs Developer with over 1 year hands on experience.
           </div>
-          <div className="buttons"></div>
+          <div className="buttons">
+            <button className="blue-btn">About Me</button>
+            <button className="border-blue-btn">Resume</button>
+          </div>
         </div>
         <div className="img">
           <img src={Me} />
@@ -63,7 +66,26 @@ const Container = styled.div`
         width: 100%;
         box-shadow: 10px 10px 10px rgba(199, 188, 188, 0.25);
         border-radius: 46px;
-        border: 1px solid grey;
+      }
+    }
+
+    .buttons {
+      .blue-btn {
+        background: #3769ca;
+        border-radius: 7px;
+        color: white;
+        padding: 10px;
+        border: transparent;
+        margin: 5px;
+      }
+      .border-blue-btn {
+        background: white;
+        border-radius: 7px;
+        color: black;
+        padding: 8px;
+        border: transparent;
+        margin: 5px;
+        border: 3px solid #3769ca;
       }
     }
   }
