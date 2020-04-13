@@ -28,9 +28,6 @@ const portfolio = () => {
             description="Tools used: Reactjs, Styled Components, Redux, React-Routing, Hooks"
           />
         </div>
-        <div className="animated-logos">
-          
-        </div>
       </div>
     </Container>
   );
@@ -40,10 +37,13 @@ export default portfolio;
 
 const Container = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
 
   .portfolio {
     width: 80%;
@@ -51,6 +51,10 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    h2 {
+      text-decoration: underline;
+    }
   }
 
   .projects {
