@@ -91,7 +91,7 @@ const Container = styled.div`
         border-radius: 100%;
         cursor: pointer;
         :hover {
-          border: 2px solid white;
+          border: 3px solid white;
           box-sizing: border-box;
         }
       }
@@ -105,7 +105,7 @@ const Container = styled.div`
         border-radius: 100%;
         cursor: pointer;
         :hover {
-          border: 2px solid #3769ca;
+          border: 4px solid #3769ca;
           box-sizing: border-box;
         }
       }

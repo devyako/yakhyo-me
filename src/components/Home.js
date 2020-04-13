@@ -7,7 +7,7 @@ const home = () => {
     <Container>
       <div className="container">
         <div className="text">
-          <div className="name">I am Yakhyo</div>
+          <div className="name">I am Umar</div>
           <div className="job">
             I am Reactjs Developer with over 1 year hands on experience.
           </div>
@@ -49,8 +49,8 @@ const Container = styled.div`
       text-align: center;
       .name {
         font-size: 70px;
-        font-weight: bold;
-      }
+          font-weight: bold;
+        }
       .job {
         font-weight: 500;
         font-size: 35px;
