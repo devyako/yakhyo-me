@@ -22,7 +22,7 @@ export default project;
 
 const Container = styled.div`
   width: 250px;
-  height: 300px;
+  height: 310px;
   background: #ffffff;
   box-shadow: 10px 10px 10px rgba(176, 176, 176, 0.25);
   border-radius: 23px;
@@ -61,17 +61,25 @@ const Container = styled.div`
 
   .visit-code {
     width: 90%;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    box-sizing: border-box;
     button {
+      cursor: pointer;
       width: 100px;
       padding: 7px;
       color: white;
       background: #3769ca;
       border-radius: 10px;
       border: transparent;
+      transition: 0.5s ease-out;
+
+      :hover {
+        box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.72);
+        transition: 0.5s ease-out;
+      }
     }
     img {
       width: 37px;

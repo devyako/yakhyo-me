@@ -23,6 +23,7 @@ const skills = () => {
         />
         <Skill
           img={Reactjs}
+          img_classname="react"
           description="Familiar with the latest updates on the language as well as hands-on
         experience with ES6, ES7 and ES8."
           circle1="blue-circle"

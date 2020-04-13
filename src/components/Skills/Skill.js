@@ -45,9 +45,23 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     img {
+      width: 69px;
+      height: 69px;
+      border-radius: 11px;
+    }
+
+    .react {
       width: 89px;
       height: 89px;
-      border-radius: 11px;
+      animation: spin 4s infinite linear;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(360deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
     }
 
     .node {

@@ -60,6 +60,15 @@ const Container = styled.div`
         text-decoration: none;
         list-style: none;
         color: #919090;
+
+        li {
+          cursor: pointer;
+          transition: 0.3s ease-out;
+          :hover {
+            color: black;
+            transition: 0.3s ease-out;
+          }
+        }
       }
 
       img {
@@ -78,11 +87,26 @@ const Container = styled.div`
         justify-content: space-around;
         color: #919090;
 
+        li {
+          cursor: pointer;
+          transition: 0.3s ease-out;
+          :hover {
+            color: black;
+            transition: 0.3s ease-out;
+          }
+        }
+
         .blue-btn {
           background: #3769ca;
           border-radius: 9px;
           color: white;
-          padding: 7px;
+          padding: 5px;
+          cursor: pointer;
+          border: 2px solid #3769ca;
+          :hover {
+            background-color: white;
+            color: #3769ca;
+          }
         }
       }
     }
