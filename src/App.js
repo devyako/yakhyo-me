@@ -1,13 +1,16 @@
 import React from "react";
-import Home from "./components/Home";
-import Navigation from "./components/UI/Navigation";
 import styled from "styled-components";
+
+import Navigation from "./components/UI/Navigation";
+import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   return (
     <Container>
       <Navigation />
       <Home />
+      <About />
     </Container>
   );
 }
