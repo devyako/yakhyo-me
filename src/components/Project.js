@@ -8,6 +8,7 @@ const project = (props) => {
       <div className="img">
         <img src={props.img} />
       </div>
+      <div className="title">{props.title}</div>
       <div className="description">{props.description}</div>
       <div className="visit-code">
         <button>Visit</button>
@@ -20,15 +21,21 @@ const project = (props) => {
 export default project;
 
 const Container = styled.div`
-  width: 387px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
   background: #ffffff;
   box-shadow: 10px 10px 10px rgba(176, 176, 176, 0.25);
   border-radius: 23px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .img {
     width: 100%;
     height: 158px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
       width: 169px;
@@ -36,23 +43,39 @@ const Container = styled.div`
     }
   }
 
+  .title {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
   .description {
-    width: 100%;
+    width: 90%;
     height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .visit-code {
+    width: 90%;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-around;
+
     button {
-      width: 150px;
+      width: 100px;
+      padding: 7px;
+      color: white;
       background: #3769ca;
       border-radius: 10px;
       border: transparent;
     }
     img {
-      width: 47px;
-      height: 47px;
+      width: 37px;
+      height: 37px;
     }
   }
 `;
