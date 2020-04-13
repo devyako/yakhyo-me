@@ -31,10 +31,11 @@ export default about;
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   .about {
     width: 90%;
@@ -43,6 +44,10 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     font-family: "Poppins", sans-serif;
+
+    h2 {
+      text-decoration: underline;
+    }
 
     .intro {
       width: 100%;
@@ -78,5 +83,14 @@ const Container = styled.div`
         }
       }
     }
+  }
+
+  .skills {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 `;
