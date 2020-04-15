@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import Arrow from "../assets/arrow.png";
 
 class Blog extends Component {
   render() {
@@ -23,7 +24,7 @@ class Blog extends Component {
                 goal by introducing our new pricing plans for your personal
                 account and teams.
               </div>
-              <div className="read-more">Read more</div>
+              <div className="read-more">Read more...</div>
               <hr />
             </div>
 
@@ -39,7 +40,7 @@ class Blog extends Component {
                 goal by introducing our new pricing plans for your personal
                 account and teams.
               </div>
-              <div className="read-more">Read more</div>
+              <div className="read-more">Read more...</div>
               <hr />
             </div>
           </div>
