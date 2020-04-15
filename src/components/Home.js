@@ -63,9 +63,16 @@ const Container = styled.div`
       align-items: center;
 
       img {
-        width: 100%;
-        box-shadow: 10px 10px 10px rgba(199, 188, 188, 0.25);
-        border-radius: 46px;
+        width: 70%; 
+        animation: mover 1s infinite alternate;
+      }
+      @keyframes mover {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-5px);
+        }
       }
     }
 

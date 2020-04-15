@@ -75,7 +75,8 @@ const Container = styled.div`
       border-radius: 10px;
       border: transparent;
       transition: 0.5s ease-out;
-
+      box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.42);
+      
       :hover {
         box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.72);
         transition: 0.5s ease-out;
