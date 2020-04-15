@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Me from "../assets/me.png";
+import Me from "../assets/me-glasses.png";
 
 const home = () => {
   return (
@@ -65,13 +65,15 @@ const Container = styled.div`
       img {
         width: 70%; 
         animation: mover 1s infinite alternate;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
       }
       @keyframes mover {
         0% {
           transform: translateY(0);
         }
         100% {
-          transform: translateY(-5px);
+          transform: translateY(-20px);
         }
       }
     }

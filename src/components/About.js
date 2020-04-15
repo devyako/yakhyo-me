@@ -14,10 +14,6 @@ const about = () => {
             development so much. So far I finished different online and on
             campus courses where I learnt alot about web development.
           </div>
-          <div className="buttons">
-            <button className="blue-btn">About Me</button>
-            <button className="border-blue-btn">Resume</button>
-          </div>
         </div>
       </div>
       <div className="skills">
@@ -52,7 +48,7 @@ const Container = styled.div`
     .intro {
       width: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
 
