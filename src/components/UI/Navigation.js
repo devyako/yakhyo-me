@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Logo from "../../assets/yakhyo.png";
+import { Link } from "react-router-dom";
 
 const navigation = () => {
   return (
@@ -11,14 +12,18 @@ const navigation = () => {
             <li>
               <img src={Logo} />
             </li>
-            <li>Home</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
             <li>About</li>
             <li>Portfolio</li>
           </ul>
         </div>
         <div className="right-items">
           <ul>
-            <li>Blog</li>
+            <Link to="/blogs">
+              <li>Blog</li>
+            </Link>
             <li className="blue-btn">Contact</li>
           </ul>
         </div>
@@ -60,7 +65,10 @@ const Container = styled.div`
         text-decoration: none;
         list-style: none;
         color: #919090;
-
+        a {
+          color: #919090;
+          text-decoration: none;
+        }
         li {
           cursor: pointer;
           transition: 0.3s ease-out;
@@ -85,14 +93,17 @@ const Container = styled.div`
         list-style: none;
         align-items: center;
         justify-content: space-around;
-        color: #919090;
 
-        li {
-          cursor: pointer;
-          transition: 0.3s ease-out;
-          :hover {
-            color: black;
+        a {
+          text-decoration: none;
+          color: #919090;
+          li {
+            cursor: pointer;
             transition: 0.3s ease-out;
+            :hover {
+              color: black;
+              transition: 0.3s ease-out;
+            }
           }
         }
 
