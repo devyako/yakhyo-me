@@ -30,8 +30,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 728px) {
-    margin-bottom: 15px;
+  @media (max-width: 500px) {
+    width: 300px;
+    margin-bottom: 20px;
   }
   .img {
     width: 100%;
@@ -39,6 +40,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     img {
       width: 169px;

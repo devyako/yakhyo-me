@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Me from "../assets/me-glasses.png";
+import { Link as Scroll } from "react-scroll";
 
 const home = () => {
   return (
@@ -19,7 +20,14 @@ const home = () => {
         <div className="img">
           <img src={Me} />
           <div id="img-off" className="buttons">
-            <button className="blue-btn">About me</button>
+            <Scroll
+              to="about"
+              smooth={true}
+              duration={1000}
+              className="blue-btn"
+            >
+              About
+            </Scroll>
             <button className="border-blue-btn">Resume</button>
           </div>
         </div>
@@ -138,7 +146,6 @@ const Container = styled.div`
         border: 2px solid #3769ca;
         transition: 0.3s ease-out;
         @media screen and (max-width: 428px) {
-          padding: 4px;
           font-size: 12px;
         }
         :hover {
@@ -159,7 +166,6 @@ const Container = styled.div`
         border: 3px solid #3769ca;
         transition: 0.3s ease-out;
         @media screen and (max-width: 428px) {
-          padding: 4px;
           font-size: 12px;
         }
         :hover {

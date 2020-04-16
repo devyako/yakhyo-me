@@ -37,6 +37,9 @@ const Container = styled.div`
   font-size: 15px;
   line-height: 20px;
   margin: 10px;
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 
   .skill-logo {
     width: 100%;
