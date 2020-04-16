@@ -9,22 +9,10 @@ const navigation = (props) => {
     <Container>
       <div className="left">
         <img className="logo" src={Logo} />
-        <Scroll to="home" smooth={true} duration={1000} className="link">
-          Home
-        </Scroll>
-        <Scroll to="about" smooth={true} duration={1000} className="link">
-          About
-        </Scroll>
-        <Scroll to="portfolio" smooth={true} duration={1000} className="link">
-          Portfolio
-        </Scroll>
       </div>
 
       <div className="right">
-        <Link to={props.to}>{props.path}</Link>
-        <Scroll to="contact" smooth={true} duration={1000} className="blue-btn">
-          Contact
-        </Scroll>
+        <Link to="/">Home</Link>
       </div>
     </Container>
   );
@@ -48,7 +36,7 @@ const Container = styled.div`
   }
 
   .left {
-    width: 60%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -80,7 +68,7 @@ const Container = styled.div`
   }
 
   .right {
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -90,21 +78,15 @@ const Container = styled.div`
 
     a {
       text-decoration: none;
-      color: grey;
       transition: 0.5s;
-      @media (max-width: 500px) {
-        background: #3769ca;
-        border-radius: 5px;
-        color: white;
-        padding: 5px;
-        border: 2px solid #3769ca; 
-        :hover {
-          background-color: white;
-          color: #3769ca;
-        }
-      }
+      background: #3769ca;
+      border-radius: 5px;
+      color: white;
+      padding: 5px;
+      border: 2px solid #3769ca;
       :hover {
-        color: black;
+        background-color: white;
+        color: #3769ca;
       }
     }
 
