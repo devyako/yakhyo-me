@@ -28,7 +28,9 @@ export default home;
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding-top: 160px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +41,9 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 728px) {
+      flex-direction: column;
+    }
 
     .text {
       width: 45%;
@@ -47,13 +52,28 @@ const Container = styled.div`
       align-items: center;
       font-family: "Poppins", sans-serif;
       text-align: center;
+      @media screen and (max-width: 728px) {
+        width: 90%;
+      }
       .name {
         font-size: 70px;
         font-weight: bold;
+        @media screen and (max-width: 728px) {
+          font-size: 50px;
+        }
+        @media screen and (max-width: 428px) {
+          font-size: 30px;
+        }
       }
       .job {
         font-weight: 500;
         font-size: 35px;
+        @media screen and (max-width: 728px) {
+          font-size: 25px;
+        }
+        @media screen and (max-width: 428px) {
+          font-size: 15px;
+        }
       }
     }
     .img {
@@ -61,12 +81,22 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media screen and (max-width: 728px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 428px) {
+       width: 80%;
+      }
 
       img {
         width: 70%;
         animation: mover 1s infinite alternate;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;
+        @media screen and (max-width: 728px) {
+          width: 90%;
+          animation: none;
+        } 
       }
       @keyframes mover {
         0% {
@@ -90,6 +120,10 @@ const Container = styled.div`
         margin: 5px;
         border: 2px solid #3769ca;
         transition: 0.3s ease-out;
+        @media screen and (max-width: 428px) {
+          padding: 4px;
+          font-size: 12px;
+        }
         :hover {
           background-color: white;
           color: #3769ca;
@@ -107,6 +141,10 @@ const Container = styled.div`
         margin: 5px;
         border: 3px solid #3769ca;
         transition: 0.3s ease-out;
+        @media screen and (max-width: 428px) {
+          padding: 4px;
+          font-size: 12px;
+        }
         :hover {
           border-radius: 15px;
           color: #3769ca;

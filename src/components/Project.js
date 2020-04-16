@@ -30,6 +30,9 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 728px) {
+    margin-bottom: 15px;
+  }
   .img {
     width: 100%;
     height: 158px;
@@ -76,7 +79,7 @@ const Container = styled.div`
       border: transparent;
       transition: 0.5s ease-out;
       box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.42);
-      
+
       :hover {
         box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.72);
         transition: 0.5s ease-out;

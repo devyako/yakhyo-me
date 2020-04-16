@@ -14,20 +14,20 @@ const navigation = () => {
               <img src={Logo} />
             </li>
             <ScrollLink to="home" smooth={true} duration={1000}>
-              <li>Home</li>
+              <li className="off">Home</li>
             </ScrollLink>
             <ScrollLink to="about" smooth={true} duration={1000}>
-              <li>About</li>
+              <li className="off">About</li>
             </ScrollLink>
             <ScrollLink to="portfolio" smooth={true} duration={1000}>
-              <li>Portfolio</li>
+              <li className="off">Portfolio</li>
             </ScrollLink>
           </ul>
         </div>
         <div className="right-items">
           <ul>
             <Link to="/blogs">
-              <li>Blog</li>
+              <li className="off">Blog</li>
             </Link>
             <ScrollLink
               to="contact"
@@ -37,6 +37,9 @@ const navigation = () => {
             >
               Contact
             </ScrollLink>
+            <Link to="blogs" className="blue-btn-blog">
+              Blogs
+            </Link>
           </ul>
         </div>
       </div>
@@ -58,6 +61,9 @@ const Container = styled.div`
   background-color: white;
   vertical-align: middle;
   border-bottom: 1px solid #727272;
+  @media screen and (max-width: 428px) {
+    height: 60px;
+  }
 
   .navigation {
     width: 80%;
@@ -67,9 +73,21 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    @media screen and (max-width: 428px) {
+      height: 60px;
+    }
+
+    .off {
+      @media screen and (max-width: 428px) {
+        display: none;
+      }
+    }
 
     .left-items {
       width: 55%;
+      @media screen and (max-width: 428px) {
+        width: 50%;
+      }
       ul {
         display: flex;
         justify-content: space-around;
@@ -94,11 +112,18 @@ const Container = styled.div`
       img {
         width: 140px;
         height: 70px;
+        @media screen and (max-width: 428px) {
+          width: 110px;
+          height: 55px;
+        }
       }
     }
 
     .right-items {
       width: 20%;
+      @media screen and (max-width: 428px) {
+        width: 50%;
+      }
       ul {
         display: flex;
         text-decoration: none;
@@ -126,8 +151,28 @@ const Container = styled.div`
           padding: 5px;
           cursor: pointer;
           border: 2px solid #3769ca;
+          @media screen and (max-width: 428px) {
+            display: none;
+          }
           :hover {
             background-color: white;
+            color: #3769ca;
+          }
+        }
+        .blue-btn-blog {
+          background: white;
+          border-radius: 9px;
+          color: #3769ca;
+          padding: 5px;
+          cursor: pointer;
+          border: 2px solid #3769ca;
+          transition: 0.3s ease;
+          @media screen and (min-width: 428px) {
+            display: none;
+          }
+          :hover {
+            border-radius: 20px;
+            transition: 0.3s ease;
             color: #3769ca;
           }
         }

@@ -28,6 +28,8 @@ export default about;
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  padding-top: 100px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +45,9 @@ const Container = styled.div`
 
     h2 {
       text-decoration: underline;
+      @media screen and (max-width: 428px) {
+        font-size: 15px;
+      }
     }
 
     .intro {
@@ -55,6 +60,10 @@ const Container = styled.div`
       .about-me {
         width: 50%;
         text-align: center;
+        @media screen and (max-width: 728px) {
+          width: 90%;
+          font-size: 15px;
+        }
       }
 
       .buttons {

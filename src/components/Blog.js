@@ -76,7 +76,7 @@ const Container = styled.div`
 
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
     .blogs {
@@ -84,6 +84,9 @@ const Container = styled.div`
       width: 50%;
       display: flex;
       flex-direction: column;
+      @media screen and (max-width: 428px) {
+        width: 95%;
+      }
 
       .blog-cont {
         margin-bottom: 15px;

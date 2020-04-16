@@ -38,11 +38,12 @@ export default portfolio;
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  padding-top: 100px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   box-sizing: border-box;
 
   .portfolio {

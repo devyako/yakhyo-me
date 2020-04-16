@@ -40,6 +40,9 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
+  padding-top: 150px;
+  box-sizing: border-box;
+
   .contact {
     width: 90%;
     padding: 30px;
@@ -48,6 +51,10 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 428px) {
+      width: 100%;
+      padding: 10px;
+    }
 
     .connect-me {
       width: 80%;
@@ -55,13 +62,19 @@ const Container = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
+      @media screen and (max-width: 428px) {
+        width: 100%;
+      }
       .text {
         width: 100%;
         text-align: center;
         font-weight: 600;
         font-size: 45px;
         color: #38a6e4;
+        @media screen and (max-width: 428px) {
+          font-size: 20px;
+          font-weight: 600;
+        }
       }
 
       .logos {
@@ -71,33 +84,58 @@ const Container = styled.div`
         justify-content: space-around;
         padding: 20px;
         box-sizing: border-box;
+        @media screen and (max-width: 428px) {
+          flex-direction: column;
+        }
 
         .linkedin {
           width: 132px;
           height: 70px;
+          @media screen and (max-width: 428px) {
+            width: 102px;
+            height: 55px;
+          }
         }
         .gmail {
           width: 53px;
           height: 53px;
+          @media screen and (max-width: 428px) {
+            width: 33px;
+            height: 33px;
+          }
         }
 
         .facebook {
           width: 125px;
           height: 47px;
+          @media screen and (max-width: 428px) {
+            width: 105px;
+            height: 37px;
+          }
         }
 
         .git {
           width: 56px;
           height: 56px;
+          @media screen and (max-width: 428px) {
+            width: 46px;
+            height: 46px;
+          }
         }
       }
     }
 
     .img {
       width: 100%;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       img {
-        width: 100%;
+        width: 50%;
+        @media screen and (max-width: 428px) {
+          width: 100%;
+        }
       }
     }
   }
