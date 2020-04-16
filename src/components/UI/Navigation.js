@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Logo from "../../assets/yakhyo.png";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const navigation = () => {
   return (
@@ -12,11 +13,15 @@ const navigation = () => {
             <li>
               <img src={Logo} />
             </li>
-            <Link to="/">
+            <ScrollLink to="home" smooth={true} duration={1000}>
               <li>Home</li>
-            </Link>
-            <li>About</li>
-            <li>Portfolio</li>
+            </ScrollLink>
+            <ScrollLink to="about" smooth={true} duration={1000}>
+              <li>About</li>
+            </ScrollLink>
+            <ScrollLink to="portfolio" smooth={true} duration={1000}>
+              <li>Portfolio</li>
+            </ScrollLink>
           </ul>
         </div>
         <div className="right-items">
@@ -24,7 +29,14 @@ const navigation = () => {
             <Link to="/blogs">
               <li>Blog</li>
             </Link>
-            <li className="blue-btn">Contact</li>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={1000}
+              className="blue-btn"
+            >
+              Contact
+            </ScrollLink>
           </ul>
         </div>
       </div>
@@ -36,8 +48,7 @@ export default navigation;
 
 const Container = styled.div`
   width: 100%;
-  top: 0;
-  left: 0;
+  top: 0px;
   position: fixed;
   z-index: 500;
   display: flex;
@@ -45,6 +56,7 @@ const Container = styled.div`
   align-items: center;
   height: 90px;
   background-color: white;
+  vertical-align: middle;
   border-bottom: 1px solid #727272;
 
   .navigation {

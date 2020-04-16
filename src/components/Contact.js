@@ -9,7 +9,7 @@ import Gmail from "../assets/gmail.png";
 
 const contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <div className="contact">
         <div className="connect-me">
           <div className="text">CONTACT OR CONNECT ME</div>

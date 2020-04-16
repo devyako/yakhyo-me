@@ -4,7 +4,7 @@ import Skills from "./Skills/Skills";
 
 const about = () => {
   return (
-    <Container>
+    <Container id="about">
       <div className="about">
         <h2>About Me</h2>
         <div className="intro">

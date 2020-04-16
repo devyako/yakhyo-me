@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Navigation from "./UI/Navigation";
+import Navigation from "./UI/Navigation-blog";
 
 class Blog extends Component {
   render() {
@@ -57,17 +57,6 @@ class Blog extends Component {
               <hr />
             </div>
           </div>
-
-          <div className="recommended-blogs">
-            <h2>Recommended Posts</h2>
-            <ul>
-              <li>Simpler Test</li>
-              <li>Simpler Test</li>
-              <li>Simpler Test</li>
-              <li>Simpler Test</li>
-              <li>Simpler Test</li>
-            </ul>
-          </div>
         </div>
       </Container>
     );
@@ -118,7 +107,7 @@ const Container = styled.div`
         }
       }
     }
-    .recommended-blogs { 
+    .recommended-blogs {
       width: 30%;
 
       ul {

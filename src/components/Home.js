@@ -4,7 +4,7 @@ import Me from "../assets/me-glasses.png";
 
 const home = () => {
   return (
-    <Container>
+    <Container id="home">
       <div className="container">
         <div className="text">
           <div className="name">I am Yakhyo</div>
@@ -63,7 +63,7 @@ const Container = styled.div`
       align-items: center;
 
       img {
-        width: 70%; 
+        width: 70%;
         animation: mover 1s infinite alternate;
         border-bottom-left-radius: 30px;
         border-bottom-right-radius: 30px;

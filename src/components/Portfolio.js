@@ -8,7 +8,7 @@ import Corona from "../assets/corona.svg";
 
 const portfolio = () => {
   return (
-    <Container>
+    <Container id="portfolio">
       <div className="portfolio">
         <h2>Portfolio</h2>
         <div className="projects">
