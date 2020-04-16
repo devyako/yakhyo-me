@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Project from "./Project";
 
-import Book from "../assets/book.svg";
-import BurgerBuilder from "../assets/burger.svg";
-import Corona from "../assets/corona.svg";
+import Book from "../../assets/book.svg";
+import BurgerBuilder from "../../assets/burger.svg";
+import Corona from "../../assets/corona.svg";
 
 const portfolio = () => {
   return (

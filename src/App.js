@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Navigation from "./components/UI/Navigation";
 import Home from "./components/Home";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact";
 
 function App() {

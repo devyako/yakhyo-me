@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Git from "../assets/git.svg";
+import Git from "../../assets/git.svg";
 
 const project = (props) => {
   return (
