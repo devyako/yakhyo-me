@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Navigation from "./UI/Navigation-blog";
+import Navigation from "./UI/Navigation";
 
 class Blog extends Component {
   render() {
     return (
       <Container>
-        <Navigation />
+        <Navigation to="/" path="Home" />
         <div className="container">
           <div className="blogs">
             <div className="blog-cont">

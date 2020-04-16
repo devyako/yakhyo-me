@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <Container>
-      <Navigation />
+      <Navigation to="/blogs" path="Blogs"/>
       <Home />
       <About />
       <Portfolio />

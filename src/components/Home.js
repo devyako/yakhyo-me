@@ -11,13 +11,17 @@ const home = () => {
           <div className="job">
             I am Reactjs Developer with over 1 year hands on experience.
           </div>
-          <div className="buttons">
+          <div id="title-off" className="buttons">
             <button className="blue-btn">About me</button>
             <button className="border-blue-btn">Resume</button>
           </div>
         </div>
         <div className="img">
           <img src={Me} />
+          <div id="img-off" className="buttons">
+            <button className="blue-btn">About me</button>
+            <button className="border-blue-btn">Resume</button>
+          </div>
         </div>
       </div>
     </Container>
@@ -55,6 +59,13 @@ const Container = styled.div`
       @media screen and (max-width: 728px) {
         width: 90%;
       }
+
+      #title-off {
+        @media screen and (max-width: 428px) {
+          display: none;
+        }
+      }
+
       .name {
         font-size: 70px;
         font-weight: bold;
@@ -85,7 +96,13 @@ const Container = styled.div`
         width: 60%;
       }
       @media screen and (max-width: 428px) {
-       width: 80%;
+        width: 80%;
+      }
+
+      #img-off {
+        @media screen and (min-width: 428px) {
+          display: none;
+        }
       }
 
       img {
@@ -96,7 +113,7 @@ const Container = styled.div`
         @media screen and (max-width: 728px) {
           width: 90%;
           animation: none;
-        } 
+        }
       }
       @keyframes mover {
         0% {
