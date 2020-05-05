@@ -25,8 +25,8 @@ const skills = () => {
         <Skill
           img={Reactjs}
           img_classname="react"
-          description="Familiar with the latest updates on the language as well as hands-on
-        experience with ES6, ES7 and ES8."
+          description="Familiar with the latest updates on the library as well as hands-on
+        experience with hooks, redux and life-cycle methods."
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
@@ -36,8 +36,7 @@ const skills = () => {
         <Skill
           img={Nodejs}
           img_classname="node"
-          description="Familiar with the latest updates on the language as well as hands-on
-        experience with ES6, ES7 and ES8."
+          description="Very comfortable with Nodejs and its core features as well as Expressjs, MVC, RestAPIs and GraphQL."
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
@@ -47,8 +46,7 @@ const skills = () => {
         <Skill
           img={MongoDB}
           img_classname="mongo"
-          description="Familiar with the latest updates on the language as well as hands-on
-        experience with ES6, ES7 and ES8."
+          description="Have a deep understanding and practical knowledge on CRUD operations, Schemas, Security and Drivers"
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
