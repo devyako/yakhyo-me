@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Skills from "./Skills/Skills";
+import Certificates from "./Certificates/Certificates";
 
 const about = () => {
   return (
@@ -9,15 +9,16 @@ const about = () => {
         <h2>About Me</h2>
         <div className="intro">
           <div className="about-me">
-            My name is Yakhyo Ismoiljonov. I am a third year computer science
-            major at Sejong University. I love web and mobile application
-            development so much. So far I finished different online and on
-            campus courses where I learnt alot about web development.
+            My name is Yakhyo Ismoiljonov. I am a second year computer science
+            major at Sejong University in Seoul. I love web and mobile
+            application development so much. So far I have finished different
+            online and university courses where I learnt alot about web
+            development.
           </div>
         </div>
       </div>
       <div className="skills">
-        <Skills />
+        <Certificates />
       </div>
     </Container>
   );

@@ -9,16 +9,14 @@ const home = () => {
       <div className="container">
         <div className="text">
           <div className="name">I am Yakhyo</div>
-          <div className="job">
-            I am Reactjs Developer with over 1 year hands on experience.
-          </div>
+          <div className="job">I am a full-stack web developer. </div>
           <div id="title-off" className="buttons">
             <button className="blue-btn">About me</button>
             <button className="border-blue-btn">Resume</button>
           </div>
         </div>
         <div className="img">
-          <img src={Me} />
+          <img src={Me} alt="me" />
           <div id="img-off" className="buttons">
             <Scroll
               to="about"

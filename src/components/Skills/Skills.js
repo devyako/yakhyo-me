@@ -10,6 +10,7 @@ import MongoDB from "../../assets/mongodb.png";
 const skills = () => {
   return (
     <Container>
+      <h2>My skills</h2>
       <div className="skills">
         <Skill
           img={JavaScript}
@@ -40,7 +41,7 @@ const skills = () => {
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
-          circle4="white-circle"
+          circle4="blue-circle"
           circle5="white-circle"
         />
         <Skill
@@ -51,7 +52,7 @@ const skills = () => {
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
-          circle4="white-circle"
+          circle4="blue-circle"
           circle5="white-circle"
         />
       </div>
