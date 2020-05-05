@@ -14,10 +14,18 @@ const contact = () => {
         <div className="connect-me">
           <div className="text">CONTACT OR CONNECT ME</div>
           <div className="logos">
-            <img src={LinkedIn} className="linkedin" />
-            <img className="gmail" src={Gmail} />
-            <img className="facebook" src={Facebook} />
-            <img className="git" src={Git} />
+            <a href="https://www.linkedin.com/in/yako-ism/">
+              <img src={LinkedIn} className="linkedin" alt="img" />
+            </a>
+            <a href="mailto:yakhyoismoildjonov@gmail.com">
+              <img className="gmail" src={Gmail} alt="img" />
+            </a>
+            <a href="https://www.facebook.com/yakhyo.ismoildjanov">
+              <img className="facebook" src={Facebook} alt="img" />
+            </a>
+            <a href="https://github.com/devyako">
+              <img className="git" src={Git} alt="img" />
+            </a>
           </div>
         </div>
         <div className="img">

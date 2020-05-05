@@ -11,7 +11,9 @@ const project = (props) => {
       <div className="title">{props.title}</div>
       <div className="description">{props.description}</div>
       <div className="visit-code">
-        <button>Visit</button>
+        <button>
+          <a href={props.link}>Visit</a>
+        </button>
         <img src={Git} />
       </div>
     </Container>

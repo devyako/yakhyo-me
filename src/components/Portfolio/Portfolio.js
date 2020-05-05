@@ -16,6 +16,7 @@ const portfolio = () => {
             img={Book}
             title="Online Book Store"
             description="Tools used: Reactjs, Styled Components, Redux, React-Routing, Hooks"
+            link="https://yakos-books.netlify.app/"
           />
           <Project
             img={BurgerBuilder}
@@ -25,7 +26,8 @@ const portfolio = () => {
           <Project
             img={Corona}
             title="COVID-19 Tracker"
-            description="Tools used: Reactjs, Styled Components, Redux, React-Routing, Hooks"
+            description="Tools used: Reactjs, Styled Components, Firebase, React-Routing, Hooks"
+            link="https://www.uzkorona.info/"
           />
         </div>
       </div>
