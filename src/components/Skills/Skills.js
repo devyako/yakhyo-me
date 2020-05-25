@@ -20,7 +20,6 @@ const skills = () => {
           circle2="blue-circle"
           circle3="blue-circle"
           circle4="blue-circle"
-          circle5="blue-circle"
         />
         <Skill
           img={Reactjs}
@@ -42,6 +41,7 @@ const skills = () => {
           circle3="blue-circle"
           circle4="blue-circle"
           circle5="white-circle"
+          circle5="white-circle"
         />
         <Skill
           img={MongoDB}
@@ -50,7 +50,7 @@ const skills = () => {
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
-          circle4="blue-circle"
+          circle5="white-circle"
           circle5="white-circle"
         />
       </div>
