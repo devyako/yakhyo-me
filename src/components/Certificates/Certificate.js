@@ -56,6 +56,11 @@ const Container = styled.div`
   .description {
     width: 90%;
     text-align: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
   }
 
   .udemy {

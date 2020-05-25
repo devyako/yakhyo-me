@@ -14,7 +14,9 @@ const project = (props) => {
         <button>
           <a href={props.link}>Visit</a>
         </button>
-        <img src={Git} />
+        <a href={props.githubLink}>
+          <img src={Git} />
+        </a>
       </div>
     </Container>
   );
@@ -87,6 +89,11 @@ const Container = styled.div`
       :hover {
         box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.72);
         transition: 0.5s ease-out;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
       }
     }
     img {

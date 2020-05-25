@@ -13,21 +13,25 @@ const portfolio = () => {
         <h2>Portfolio</h2>
         <div className="projects">
           <Project
+            img={Corona}
+            title="COVID-19 Tracker"
+            description="Covid 19 tracker for Uzbekistan."
+            link="https://www.uzkorona.info/"
+            githubLink="https://github.com/devyako/corona-uzb-live"
+          />
+          <Project
             img={Book}
             title="Online Book Store"
-            description="Tools used: Reactjs, Styled Components, Redux, React-Routing, Hooks"
+            description="Bunch of really recommended books by successful people."
             link="https://yakos-books.netlify.app/"
+            githubLink="https://github.com/devyako/mybookstore"
           />
           <Project
             img={BurgerBuilder}
-            title="Burger Builder"
-            description="Tools used: Reactjs, Styled Components, Redux, React-Routing, Hooks"
-          />
-          <Project
-            img={Corona}
-            title="COVID-19 Tracker"
-            description="Tools used: Reactjs, Styled Components, Firebase, React-Routing, Hooks"
-            link="https://www.uzkorona.info/"
+            title="Farshburger"
+            description="A web site on which customers can see the menu of a restaurant and order a food."
+            link="https://www.farshburger.biz/"
+            githubLink="https://github.com/devyako/farshburger"
           />
         </div>
       </div>

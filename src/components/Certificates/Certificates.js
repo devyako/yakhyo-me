@@ -4,6 +4,8 @@ import Certificate from "./Certificate";
 
 import ReactJPG from "../../assets/react-cert.jpg";
 import NodeJPG from "../../assets/node.jpg";
+import MongoJPG from "../../assets/mongodb-cetf.jpg";
+
 const certificates = () => {
   return (
     <Container>
@@ -19,6 +21,12 @@ const certificates = () => {
           description="
           NodeJS - The Complete Guide (incl. Express, MVC, REST APIs, GraphQL)"
           link="https://www.udemy.com/certificate/UC-55bd18c1-e465-43f6-bec0-af022d26cc76/"
+        />
+        <Certificate
+          img={MongoJPG}
+          description="
+          MongoDB - The Complete Developer's Guide"
+          link="https://www.udemy.com/certificate/UC-0dcabb1d-3ea0-4a5b-bab2-c8cfc54bf65f/"
         />
       </div>
     </Container>
