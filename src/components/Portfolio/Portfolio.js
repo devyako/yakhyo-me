@@ -5,6 +5,7 @@ import Project from "./Project";
 import Book from "../../assets/book.svg";
 import BurgerBuilder from "../../assets/burger.svg";
 import Corona from "../../assets/corona.svg";
+import Message from "../../assets/message.svg";
 
 const portfolio = () => {
   return (
@@ -32,6 +33,13 @@ const portfolio = () => {
             description="A web site on which customers can see the menu of a restaurant and order a food."
             link="https://www.farshburger.biz/"
             githubLink="https://github.com/devyako/farshburger"
+          />
+          <Project
+            img={Message}
+            title="UzSMS"
+            description="A web site on which users can send messages to their contacts."
+            link="https://smsuz.netlify.app/"
+            githubLink="https://github.com/devyako/front-end-of-rest-api-project"
           />
         </div>
       </div>
