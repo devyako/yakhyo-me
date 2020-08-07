@@ -24,7 +24,7 @@ const portfolio = () => {
             img={Book}
             title="Online Book Store"
             description="Bunch of really recommended books by successful people."
-            link="https://yakos-books.netlify.app/"
+            link="https://mbooks.netlify.app/"
             githubLink="https://github.com/devyako/mybookstore"
           />
           <Project

@@ -7,13 +7,15 @@ import Reactjs from "../../assets/react.png";
 import Nodejs from "../../assets/node.png";
 import MongoDB from "../../assets/mongodb.png";
 
+import TypeScript from "../../assets/typescript.png";
+import MySql from "../../assets/mysql.png";
+import Npm from "../../assets/npm.png";
+
 const skills = () => {
   return (
     <Container>
       <h2>My skills</h2>
       <div className="skills">
-    
-    
         <Skill
           img={JavaScript}
           description="Familiar with the latest updates on the language as well as hands-on
@@ -25,8 +27,10 @@ const skills = () => {
           circle5="blue-circle"
         />
         <Skill
-          img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
-          description="Good understanding on how to use types, interfaces and classes."
+          img={Reactjs}
+          img_classname="react"
+          description="Familiar with the latest updates on the library as well as hands-on
+        experience with hooks, redux and life-cycle methods."
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
@@ -34,10 +38,8 @@ const skills = () => {
           circle5="white-circle"
         />
         <Skill
-          img={Reactjs}
-          img_classname="react"
-          description="Familiar with the latest updates on the library as well as hands-on
-        experience with hooks, redux and life-cycle methods."
+          img={TypeScript}
+          description="Have a deep understanding on how to use types, interfaces and classes. Really comfortable on coding .tsx apps."
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
@@ -64,6 +66,26 @@ const skills = () => {
           circle4="white-circle"
           circle5="white-circle"
         />
+        <Skill
+          img={MySql}
+          img_classname="mysql"
+          description="Have a deep understanding and practical knowledge on CRUD operations, Tables, Schemas, Security and Drivers"
+          circle1="blue-circle"
+          circle2="blue-circle"
+          circle3="blue-circle"
+          circle4="white-circle"
+          circle5="white-circle"
+        />
+        <Skill
+          img={Npm}
+          img_classname="mysql"
+          description="One of my favorite package managers. Comfortable on using and configuring package managing.    "
+          circle1="blue-circle"
+          circle2="blue-circle"
+          circle3="blue-circle"
+          circle4="blue-circle"
+          circle5="blue-circle"
+        />
       </div>
     </Container>
   );
@@ -79,7 +101,7 @@ const Container = styled.div`
   align-items: center;
 
   .skills {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;

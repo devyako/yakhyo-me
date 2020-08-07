@@ -76,6 +76,10 @@ const Container = styled.div`
       width: 189px;
       height: 51px;
     }
+    .mysql {
+      width: 120px;
+      height: 61px;
+    }
   }
 
   .description {

@@ -10,10 +10,10 @@ const about = () => {
         <div className="intro">
           <div className="about-me">
             My name is Yakhyo Ismoiljonov. I am a second year computer science
-            major at Sejong University in Seoul. I love web and mobile
-            application development so much. So far I have finished different
-            online and university courses where I learnt alot about web
-            development.
+            major at Sejong University in Seoul and a software engineer with
+            hands-on experience in most levels of frontend developing and has a
+            really good background on back-end tools like NodeJs, ExpressJs and
+            MongoDB.
           </div>
         </div>
       </div>
