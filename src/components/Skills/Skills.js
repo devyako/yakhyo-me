@@ -12,15 +12,26 @@ const skills = () => {
     <Container>
       <h2>My skills</h2>
       <div className="skills">
+    
+    
         <Skill
           img={JavaScript}
           description="Familiar with the latest updates on the language as well as hands-on
-        experience with ES6, ES7 and ES8."
+          experience with ES6, ES7 and ES8."
           circle1="blue-circle"
           circle2="blue-circle"
           circle3="blue-circle"
           circle4="blue-circle"
           circle5="blue-circle"
+        />
+        <Skill
+          img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+          description="Good understanding on how to use types, interfaces and classes."
+          circle1="blue-circle"
+          circle2="blue-circle"
+          circle3="blue-circle"
+          circle4="blue-circle"
+          circle5="white-circle"
         />
         <Skill
           img={Reactjs}
