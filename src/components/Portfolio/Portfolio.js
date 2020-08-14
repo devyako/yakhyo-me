@@ -18,28 +18,28 @@ const portfolio = () => {
             title="COVID-19 Tracker"
             description="Covid 19 tracker for Uzbekistan."
             link="https://www.uzkorona.info/"
-            githubLink="https://github.com/devyako/corona-uzb-live"
+            githubLink="https://github.com/yakohere/corona-uzb-live"
           />
           <Project
             img={Book}
             title="Online Book Store"
             description="Bunch of really recommended books by successful people."
             link="https://mbooks.netlify.app/"
-            githubLink="https://github.com/devyako/mybookstore"
+            githubLink="https://github.com/yakohere/mybookstore"
           />
           <Project
             img={BurgerBuilder}
             title="Farshburger"
             description="A web site on which customers can see the menu of a restaurant and order a food."
             link="https://www.farshburger.biz/"
-            githubLink="https://github.com/devyako/farshburger"
+            githubLink="https://github.com/yakohere/farshburger"
           />
           <Project
             img={Message}
             title="UzSMS"
             description="A web site on which users can send messages to their contacts."
             link="https://smsuz.netlify.app/"
-            githubLink="https://github.com/devyako/front-end-of-rest-api-project"
+            githubLink="https://github.com/yakohere/front-end-of-rest-api-project"
           />
         </div>
       </div>
