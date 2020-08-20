@@ -5,7 +5,7 @@ const skill = (props) => {
   return (
     <Container>
       <div className="skill-logo">
-        <img className={props.img_classname} src={props.img} />
+        <img className={props.img_classname} src={props.img} alt="mg" />
       </div>
       <div className="description">{props.description}</div>
       <div className="confidence">
@@ -79,6 +79,10 @@ const Container = styled.div`
     .mysql {
       width: 120px;
       height: 61px;
+    }
+    .nginx {
+      width: 160px;
+      height: auto;
     }
   }
 

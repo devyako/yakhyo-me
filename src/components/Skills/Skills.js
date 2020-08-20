@@ -10,6 +10,7 @@ import MongoDB from "../../assets/mongodb.png";
 import TypeScript from "../../assets/typescript.png";
 import MySql from "../../assets/mysql.png";
 import Npm from "../../assets/npm.png";
+import Nginx from "../../assets/nginx.png";
 
 const skills = () => {
   return (
@@ -85,6 +86,16 @@ const skills = () => {
           circle3="blue-circle"
           circle4="blue-circle"
           circle5="blue-circle"
+        />
+        <Skill
+          img={Nginx}
+          img_classname="nginx"
+          description="Comfortable with using Nginx as web serving, reverse proxying and load balancing."
+          circle1="blue-circle"
+          circle2="blue-circle"
+          circle3="blue-circle"
+          circle4="blue-circle"
+          circle5="white-circle"
         />
       </div>
     </Container>
