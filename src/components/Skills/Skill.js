@@ -31,12 +31,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background: #ffffff;
-  box-shadow: 10px 10px 10px rgba(176, 176, 176, 0.25);
+  box-shadow: 0px 0px 7px 5px rgba(54, 49, 49, 0.25);
   border-radius: 23px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   line-height: 20px;
-  margin: 10px;
+  margin: 15px;
   @media (max-width: 500px) {
     width: 300px;
   }

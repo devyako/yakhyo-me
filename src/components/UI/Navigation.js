@@ -39,10 +39,11 @@ const Container = styled.div`
   position: fixed;
   z-index: 1;
   display: flex;
+  box-shadow: 0px 0px 7px 5px rgba(54, 49, 49, 0.25);
+
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  border-bottom: 1px solid #727272;
   @media (max-width: 500px) {
     height: 60px;
   }
@@ -97,7 +98,7 @@ const Container = styled.div`
         border-radius: 5px;
         color: white;
         padding: 5px;
-        border: 2px solid #3769ca; 
+        border: 2px solid #3769ca;
         :hover {
           background-color: white;
           color: #3769ca;

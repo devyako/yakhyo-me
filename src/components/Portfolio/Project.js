@@ -28,7 +28,7 @@ const Container = styled.div`
   width: 250px;
   height: 310px;
   background: #ffffff;
-  box-shadow: 10px 10px 10px rgba(176, 176, 176, 0.25);
+  box-shadow: 0px 0px 7px 5px rgba(54, 49, 49, 0.25);
   border-radius: 23px;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,9 @@ const Container = styled.div`
         box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.72);
         transition: 0.5s ease-out;
       }
-
+      :focus {
+        outline: none;
+      }
       a {
         text-decoration: none;
         color: white;

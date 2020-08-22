@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Me from "../assets/me-glasses.png";
+import Resume from "../Yakhyo.pdf";
 import { Link as Scroll } from "react-scroll";
 
 const home = () => {
@@ -11,8 +12,12 @@ const home = () => {
           <div className="name">I am Yakhyo</div>
           <div className="job">I am a full-stack web developer. </div>
           <div id="title-off" className="buttons">
-            <button className="blue-btn">About me</button>
-            <button className="border-blue-btn">Resume</button>
+            <Scroll to="about" smooth={true} duration={1000}>
+              <button className="blue-btn">About me</button>
+            </Scroll>
+            <a href={Resume} download>
+              <button className="border-blue-btn">Resume</button>
+            </a>
           </div>
         </div>
         <div className="img">
@@ -26,7 +31,9 @@ const home = () => {
             >
               About
             </Scroll>
-            <button className="border-blue-btn">Resume</button>
+            <a href={Resume} download>
+              <button className="border-blue-btn">Resume</button>
+            </a>
           </div>
         </div>
       </div>
@@ -132,6 +139,8 @@ const Container = styled.div`
     }
 
     .buttons {
+      width: 300px;
+
       .blue-btn {
         cursor: pointer;
         font-family: "Poppins", sans-serif;
@@ -143,6 +152,7 @@ const Container = styled.div`
         margin: 5px;
         border: 2px solid #3769ca;
         transition: 0.3s ease-out;
+        box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.72);
         @media screen and (max-width: 428px) {
           font-size: 12px;
         }
@@ -150,6 +160,9 @@ const Container = styled.div`
           background-color: white;
           color: #3769ca;
           transition: 0.3s ease-out;
+        }
+        :focus {
+          outline: none;
         }
       }
       .border-blue-btn {
@@ -160,7 +173,7 @@ const Container = styled.div`
         color: black;
         padding: 7px;
         border: transparent;
-        margin: 5px;
+        margin-left: 20px;
         border: 3px solid #3769ca;
         transition: 0.3s ease-out;
         @media screen and (max-width: 428px) {
@@ -170,6 +183,9 @@ const Container = styled.div`
           border-radius: 15px;
           color: #3769ca;
           transition: 0.3s ease-out;
+        }
+        :focus {
+          outline: none;
         }
       }
     }
