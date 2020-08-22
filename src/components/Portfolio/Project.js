@@ -28,7 +28,8 @@ const Container = styled.div`
   width: 250px;
   height: 310px;
   background: #ffffff;
-  box-shadow: 0px 0px 7px 5px rgba(54, 49, 49, 0.25);
+  box-shadow: 10px 10px 10px 2px rgba(101, 101, 101, 0.29);
+
   border-radius: 23px;
   display: flex;
   flex-direction: column;

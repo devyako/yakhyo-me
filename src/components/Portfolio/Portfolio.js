@@ -61,7 +61,7 @@ const Container = styled.div`
   box-sizing: border-box;
 
   .portfolio {
-    width: 80%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;

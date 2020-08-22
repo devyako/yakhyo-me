@@ -70,11 +70,15 @@ const Container = styled.div`
       cursor: pointer;
       color: grey;
       transition: 0.5s;
+      font-size: 17px;
+      padding: 10px;
+      border-radius: 5px;
       @media (max-width: 500px) {
         display: none;
       }
       :hover {
         color: black;
+        background: rgba(55, 105, 202, 0.14);
         transition: 0.5s;
       }
     }
@@ -92,6 +96,8 @@ const Container = styled.div`
     a {
       text-decoration: none;
       color: grey;
+      padding: 10px;
+      border-radius: 5px;
       transition: 0.5s;
       @media (max-width: 500px) {
         background: #3769ca;
@@ -106,6 +112,7 @@ const Container = styled.div`
       }
       :hover {
         color: black;
+        background: rgba(55, 105, 202, 0.14);
       }
     }
 

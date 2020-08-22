@@ -31,7 +31,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   background: #ffffff;
-  box-shadow: 0px 0px 7px 5px rgba(54, 49, 49, 0.25);
+  box-shadow: 10px 10px 10px 2px rgba(101, 101, 101, 0.29);
   border-radius: 23px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
@@ -132,6 +132,32 @@ const Container = styled.div`
         :hover {
           border: 4px solid #3769ca;
           box-sizing: border-box;
+        }
+      }
+    }
+  }
+
+  :hover {
+    .skill-logo {
+      img {
+        animation: rotation 0.8s infinite linear;
+
+        @keyframes rotation {
+          0% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(10deg);
+          }
+          50% {
+            transform: rotate(0deg);
+          }
+          75% {
+            transform: rotate(-10deg);
+          }
+          99% {
+            transform: rotate(0deg);
+          }
         }
       }
     }
