@@ -34,13 +34,6 @@ const portfolio = () => {
             link="https://www.farshburger.biz/"
             githubLink="https://github.com/yakohere/farshburger"
           />
-          <Project
-            img={Message}
-            title="UzSMS"
-            description="A web site on which users can send messages to their contacts."
-            link="https://smsuz.netlify.app/"
-            githubLink="https://github.com/yakohere/front-end-of-rest-api-project"
-          />
         </div>
       </div>
     </Container>
