@@ -20,10 +20,10 @@ const contact = () => {
             <a href="mailto:yakhyoismoildjonov@gmail.com">
               <img className="gmail" src={Gmail} alt="img" />
             </a>
-            <a href="https://www.facebook.com/yakhyo.ismoildjanov">
+            <a href="https://www.facebook.com/yakohere/">
               <img className="facebook" src={Facebook} alt="img" />
             </a>
-            <a href="https://github.com/devyako">
+            <a href="https://github.com/yakohere">
               <img className="git" src={Git} alt="img" />
             </a>
           </div>
