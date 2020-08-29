@@ -1,65 +1,31 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Navigation from "./UI/BlogNav";
 
-class Blog extends Component {
-  render() {
-    return (
-      <Container>
-        <Navigation />
-        <div className="blogs">
-          <div className="blog-cont">
-            <div className="time">Thursday, April 9th 2020 (5 days ago)</div>
-            <div className="title">
-              <h1>Simpler Pricing</h1>
-            </div>
-            <div className="article">
-              Since the launch of our platform, we have always aimed to make our
-              pricing model as simple as possible, and perfectly tailored to
-              your needs. Today, we are taking a giant leap towards that goal by
-              introducing our new pricing plans for your personal account and
-              teams.
-            </div>
-            <div className="read-more">Read more...</div>
-            <hr />
+const Blog = () => {
+  return (
+    <Container>
+      <Navigation />
+      <div className="blogs">
+        <div className="blog-cont">
+          <div className="time">Thursday, April 9th 2020 (5 days ago)</div>
+          <div className="title">
+            <h1>Simpler Pricing</h1>
           </div>
-
-          <div className="blog-cont">
-            <div className="time">Thursday, April 9th 2020 (5 days ago)</div>
-            <div className="title">
-              <h1>Simpler Pricing</h1>
-            </div>
-            <div className="article">
-              Since the launch of our platform, we have always aimed to make our
-              pricing model as simple as possible, and perfectly tailored to
-              your needs. Today, we are taking a giant leap towards that goal by
-              introducing our new pricing plans for your personal account and
-              teams.
-            </div>
-            <div className="read-more">Read more...</div>
-            <hr />
+          <div className="article">
+            Since the launch of our platform, we have always aimed to make our
+            pricing model as simple as possible, and perfectly tailored to your
+            needs. Today, we are taking a giant leap towards that goal by
+            introducing our new pricing plans for your personal account and
+            teams.
           </div>
-
-          <div className="blog-cont">
-            <div className="time">Thursday, April 9th 2020 (5 days ago)</div>
-            <div className="title">
-              <h1>Simpler Pricing</h1>
-            </div>
-            <div className="article">
-              Since the launch of our platform, we have always aimed to make our
-              pricing model as simple as possible, and perfectly tailored to
-              your needs. Today, we are taking a giant leap towards that goal by
-              introducing our new pricing plans for your personal account and
-              teams.
-            </div>
-            <div className="read-more">Read more...</div>
-            <hr />
-          </div>
+          <div className="read-more">Read more...</div>
+          <hr />
         </div>
-      </Container>
-    );
-  }
-}
+      </div>
+    </Container>
+  );
+};
 
 export default Blog;
 
