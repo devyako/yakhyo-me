@@ -5,6 +5,7 @@ import Certificate from "./Certificate";
 import ReactJPG from "../../assets/react-cert.jpg";
 import NodeJPG from "../../assets/node.jpg";
 import MongoJPG from "../../assets/mongodb-cetf.jpg";
+import TypeScript from "../../assets/typescript.jpg";
 
 const certificates = () => {
   return (
@@ -27,6 +28,12 @@ const certificates = () => {
           description="
           MongoDB - The Complete Developer's Guide"
           link="https://www.udemy.com/certificate/UC-0dcabb1d-3ea0-4a5b-bab2-c8cfc54bf65f/"
+        />
+        <Certificate
+          img={TypeScript}
+          description="
+          Understanding TypeScript 2020 Edition"
+          link="https://www.udemy.com/certificate/UC-9c35770a-765d-492f-a3aa-a1f547e02020/"
         />
       </div>
     </Container>
