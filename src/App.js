@@ -12,6 +12,7 @@ function App() {
   return (
     <Container>
       <Navigation to="/blogs" path="Blogs" />
+
       <Home />
       <About />
       <Skills />

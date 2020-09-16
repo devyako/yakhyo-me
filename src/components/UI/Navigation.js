@@ -3,30 +3,38 @@ import styled from "styled-components";
 import Logo from "../../assets/yakhyo.png";
 import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
+import { Fade, Flip, Slide } from "react-reveal";
 
 const navigation = (props) => {
   return (
-    <Container>
-      <div className="left">
-        <img className="logo" src={Logo} />
-        <Scroll to="home" smooth={true} duration={1000} className="link">
-          Home
-        </Scroll>
-        <Scroll to="about" smooth={true} duration={1000} className="link">
-          About
-        </Scroll>
-        <Scroll to="portfolio" smooth={true} duration={1000} className="link">
-          Portfolio
-        </Scroll>
-      </div>
+    <Fade top>
+      <Container>
+        <div className="left">
+          <img className="logo" src={Logo} />
+          <Scroll to="home" smooth={true} duration={1000} className="link">
+            Home
+          </Scroll>
+          <Scroll to="about" smooth={true} duration={1000} className="link">
+            About
+          </Scroll>
+          <Scroll to="portfolio" smooth={true} duration={1000} className="link">
+            Portfolio
+          </Scroll>
+        </div>
 
-      <div className="right">
-        <Link to={props.to}>{props.path}</Link>
-        <Scroll to="contact" smooth={true} duration={1000} className="blue-btn">
-          Contact
-        </Scroll>
-      </div>
-    </Container>
+        <div className="right">
+          <Link to={props.to}>{props.path}</Link>
+          <Scroll
+            to="contact"
+            smooth={true}
+            duration={1000}
+            className="blue-btn"
+          >
+            Contact
+          </Scroll>
+        </div>
+      </Container>
+    </Fade>
   );
 };
 

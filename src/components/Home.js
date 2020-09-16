@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Me from "../assets/me-glasses.png";
 import Resume from "../Yakhyo.pdf";
 import { Link as Scroll } from "react-scroll";
+import { Zoom } from "react-reveal";
 
 const home = () => {
   return (
@@ -21,7 +22,9 @@ const home = () => {
           </div>
         </div>
         <div className="img">
-          <img src={Me} alt="me" />
+          <Zoom left>
+            <img src={Me} alt="me" />
+          </Zoom>
           <div id="img-off" className="buttons">
             <Scroll
               to="about"
