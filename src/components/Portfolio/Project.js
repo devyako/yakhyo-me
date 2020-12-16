@@ -25,20 +25,16 @@ const project = (props) => {
 export default project;
 
 const Container = styled.div`
-  width: 250px;
-  height: 310px;
-  background: #ffffff;
-  box-shadow: 10px 10px 10px 2px rgba(101, 101, 101, 0.29);
-
-  border-radius: 23px;
+  width: 50%;
+  height: 400px;
+  border: 10px solid #121212;
+  background: #ffffff; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (max-width: 500px) {
-    width: 300px;
-    margin-bottom: 20px;
-  }
+  box-sizing: border-box;
+
   .img {
     width: 100%;
     height: 158px;
@@ -76,6 +72,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
+
     button {
       cursor: pointer;
       width: 100px;

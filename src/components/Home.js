@@ -54,12 +54,14 @@ const Container = styled.div`
     }
 
     .text {
+      color: #121212;
       width: 45%;
       display: flex;
       flex-direction: column;
       align-items: center;
       font-family: "Poppins", sans-serif;
       text-align: center;
+
       @media screen and (max-width: 728px) {
         width: 90%;
       }
@@ -67,6 +69,7 @@ const Container = styled.div`
       .name {
         font-size: 70px;
         font-weight: bold;
+      
         @media screen and (max-width: 728px) {
           font-size: 50px;
         }
@@ -100,13 +103,13 @@ const Container = styled.div`
             background: white;
             border-radius: 7px;
             color: black;
-            padding: 7px;
+            padding: 10px;
             border: transparent;
             border: 3px solid #3769ca;
             transition: 0.3s ease-out;
               
               @media screen and (max-width: 428px) {
-              font-size: 12px;
+                  font-size: 12px;
               }
               
               :hover {
