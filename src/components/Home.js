@@ -4,35 +4,20 @@ import Me from "../assets/me-glasses.png";
 import Resume from "../Yakhyo.pdf";
 import { Link as Scroll } from "react-scroll";
 import { Zoom } from "react-reveal";
+import Background from "../assets/background.png";
 
 const home = () => {
   return (
     <Container id="home">
       <div className="container">
         <div className="text">
+
           <div className="name">I am Yakhyo</div>
           <div className="job">I am a full-stack web developer. </div>
+
           <div id="title-off" className="buttons">
             <Scroll to="about" smooth={true} duration={1000}>
-              <button className="blue-btn">About me</button>
-            </Scroll>
-            <a href={Resume} download>
-              <button className="border-blue-btn">Resume</button>
-            </a>
-          </div>
-        </div>
-        <div className="img">
-          <Zoom left>
-            <img src={Me} alt="me" />
-          </Zoom>
-          <div id="img-off" className="buttons">
-            <Scroll
-              to="about"
-              smooth={true}
-              duration={1000}
-              className="blue-btn"
-            >
-              About
+              <button className="border-blue-btn">About me</button>
             </Scroll>
             <a href={Resume} download>
               <button className="border-blue-btn">Resume</button>
@@ -48,8 +33,11 @@ export default home;
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
-  padding-top: 160px;
+  height: 100vh; 
+  background-image: url(${Background});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -76,12 +64,6 @@ const Container = styled.div`
         width: 90%;
       }
 
-      #title-off {
-        @media screen and (max-width: 428px) {
-          display: none;
-        }
-      }
-
       .name {
         font-size: 70px;
         font-weight: bold;
@@ -92,6 +74,7 @@ const Container = styled.div`
           font-size: 30px;
         }
       }
+
       .job {
         font-weight: 500;
         font-size: 35px;
@@ -103,93 +86,38 @@ const Container = styled.div`
         }
       }
     }
-    .img {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media screen and (max-width: 728px) {
-        width: 60%;
-      }
-      @media screen and (max-width: 428px) {
-        width: 80%;
-      }
-
-      #img-off {
-        @media screen and (min-width: 428px) {
-          display: none;
-        }
-      }
-
-      img {
-        width: 70%;
-        animation: mover 1s infinite alternate;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        @media screen and (max-width: 728px) {
-          width: 90%;
-          animation: none;
-        }
-      }
-      @keyframes mover {
-        0% {
-          transform: translateY(0);
-        }
-        100% {
-          transform: translateY(-20px);
-        }
-      }
-    }
 
     .buttons {
-      width: 300px;
+      width: 200px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
 
-      .blue-btn {
-        cursor: pointer;
-        font-family: "Poppins", sans-serif;
-        background: #3769ca;
-        border-radius: 7px;
-        color: white;
-        padding: 7px;
-        border: transparent;
-        margin: 5px;
-        border: 2px solid #3769ca;
-        transition: 0.3s ease-out;
-        box-shadow: 10px 10px 10px rgba(55, 105, 202, 0.72);
-        @media screen and (max-width: 428px) {
-          font-size: 12px;
-        }
-        :hover {
-          background-color: white;
-          color: #3769ca;
-          transition: 0.3s ease-out;
-        }
-        :focus {
-          outline: none;
-        }
-      }
-      .border-blue-btn {
-        font-family: "Poppins", sans-serif;
-        cursor: pointer;
-        background: white;
-        border-radius: 7px;
-        color: black;
-        padding: 7px;
-        border: transparent;
-        margin-left: 20px;
-        border: 3px solid #3769ca;
-        transition: 0.3s ease-out;
-        @media screen and (max-width: 428px) {
-          font-size: 12px;
-        }
-        :hover {
-          border-radius: 15px;
-          color: #3769ca;
-          transition: 0.3s ease-out;
-        }
-        :focus {
-          outline: none;
-        }
+        .border-blue-btn {
+            font-family: "Poppins", sans-serif;
+            cursor: pointer;
+            background: white;
+            border-radius: 7px;
+            color: black;
+            padding: 7px;
+            border: transparent;
+            border: 3px solid #3769ca;
+            transition: 0.3s ease-out;
+              
+              @media screen and (max-width: 428px) {
+              font-size: 12px;
+              }
+              
+              :hover {
+                border-radius: 15px;
+                color: #3769ca;
+                transition: 0.3s ease-out;
+              }
+              
+              :focus {
+                outline: none;
+              }
       }
     }
   }

@@ -44,23 +44,22 @@ const Container = styled.div`
   width: 100%;
   height: 90px;
   top: 0px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   display: flex;
-  box-shadow: 0px 0px 7px 5px rgba(54, 49, 49, 0.25);
-
   justify-content: space-around;
-  align-items: center;
-  background-color: white;
+  align-items: center; 
+
   @media (max-width: 500px) {
     height: 60px;
   }
 
-  .left {
-    width: 60%;
+  .left { 
+    width: 600px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     @media (max-width: 500px) {
       width: 50%;
     }
@@ -68,6 +67,7 @@ const Container = styled.div`
     .logo {
       width: 140px;
       height: 70px;
+
       @media (max-width: 500px) {
         width: 110px;
         height: 55px;
@@ -78,7 +78,7 @@ const Container = styled.div`
       cursor: pointer;
       color: grey;
       transition: 0.5s;
-      font-size: 17px;
+      font-size: 18px;
       padding: 10px;
       border-radius: 5px;
       @media (max-width: 500px) {
