@@ -49,6 +49,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center; 
+  z-index: 999999;
 
   @media (max-width: 500px) {
     height: 60px;

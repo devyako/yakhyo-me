@@ -1,28 +1,31 @@
 import React from "react";
-import styled from "styled-components";
-import Me from "../assets/me-glasses.png";
+import styled from "styled-components"; 
 import Resume from "../Yakhyo.pdf";
 import { Link as Scroll } from "react-scroll";
 import { Zoom } from "react-reveal";
 import Background from "../assets/background.png";
+import Fade from "react-reveal"
 
 const home = () => {
   return (
     <Container id="home">
       <div className="container">
         <div className="text">
+          <Fade>
+            <div className="name">I am Yakhyo</div>
+            <div className="job">I am a full-stack web developer. </div>
+          </Fade>
+          <Fade bottom>
+            <div className="buttons">
+              <Scroll to="about" smooth={true} duration={1000}>
+                <button className="border-blue-btn">About me</button>
+              </Scroll>
+              <a href={Resume} download>
+                <button className="border-blue-btn">Resume</button>
+              </a>
+            </div>
+          </Fade>
 
-          <div className="name">I am Yakhyo</div>
-          <div className="job">I am a full-stack web developer. </div>
-
-          <div id="title-off" className="buttons">
-            <Scroll to="about" smooth={true} duration={1000}>
-              <button className="border-blue-btn">About me</button>
-            </Scroll>
-            <a href={Resume} download>
-              <button className="border-blue-btn">Resume</button>
-            </a>
-          </div>
         </div>
       </div>
     </Container>
@@ -91,13 +94,14 @@ const Container = styled.div`
     }
 
     .buttons {
-      width: 200px;
+      width: 250px;
       margin-top: 20px;
       display: flex;
       align-items: center;
       justify-content: space-around;
 
         .border-blue-btn {
+          width: 100px;
             font-family: "Poppins", sans-serif;
             cursor: pointer;
             background: white;
