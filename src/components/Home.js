@@ -64,7 +64,7 @@ const Container = styled.div`
       align-items: center;
       font-family: "Poppins", sans-serif;
       text-align: center;
-      background: rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.40);
       padding: 50px;
       border-radius: 10px;
 
