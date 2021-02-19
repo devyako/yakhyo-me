@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components"; 
+import styled from "styled-components";
 import Resume from "../Yakhyo.pdf";
 import { Link as Scroll } from "react-scroll";
 import { Zoom } from "react-reveal";
-import Background from "../assets/background.png";
+import Background from "../assets/bgg.jpg";
 import Fade from "react-reveal"
 
 const home = () => {
@@ -64,6 +64,9 @@ const Container = styled.div`
       align-items: center;
       font-family: "Poppins", sans-serif;
       text-align: center;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 50px;
+      border-radius: 10px;
 
       @media screen and (max-width: 728px) {
         width: 90%;
@@ -71,8 +74,8 @@ const Container = styled.div`
 
       .name {
         font-size: 70px;
-        font-weight: bold;
-      
+        font-weight: bold; 
+
         @media screen and (max-width: 728px) {
           font-size: 50px;
         }
@@ -109,7 +112,7 @@ const Container = styled.div`
             color: black;
             padding: 10px;
             border: transparent;
-            border: 3px solid #3769ca;
+            border: 3px solid #fff;
             transition: 0.3s ease-out;
               
               @media screen and (max-width: 428px) {
